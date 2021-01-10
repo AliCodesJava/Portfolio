@@ -9,8 +9,8 @@
         <link rel="icon" type="image/svg" href="../assets/APTitleIcon.svg">
 
         <link rel="stylesheet" type="text/css" href="../CSS/common.css">
-        <link rel="stylesheet" type="text/css" href="../CSS/welcome-aboutMe-cta-buttons.css">
-        <link rel="stylesheet" type="text/css" href="../CSS/index.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/cta-buttons.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/about-me.css">
 
         <!-- using font-awesome stylesheet -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
@@ -36,21 +36,31 @@
                 ­<!-- bars menu pseudo-element icon here -->
                 <ul onclick="toggleMenu()" class="pseudo-elements-icons" id="menu">
                     ­<!-- closing cross pseudo-element icon here -->
-                    <li><a id="active-link" href="index.html">Home</a></li>
-                    <li><a class="other-link" href="about-me.html">About Me</a></li>
+                    <li><a class="other-link" href="index.html">Home</a></li>
+                    <li><a id="active-link" href="about-me.html">About Me</a></li>
                     <li><a class="other-link" href="technical-skills.html">Technical Skills</a></li>
                     <li><a class="other-link" href="projects.html">Projects</a></li>
                     <li><a class="other-link" href="coding-challenges.html">Coding Challenges</a></li>
                 </ul>
             </nav>
         </header>
-        <section id="welcome">
-            <h1 id="welcome-sentence">Hello, <strong>It’s Ali</strong> ! Welcome to my Portfolio !</h1><br />
-            <p id="welcome-text">I’m a second year Computer Science student in Canada 🇨🇦.<br /> <!-- 🇨🇦 : Canadian Flag emoji -->
-                Currently, <strong id="work-status">I’m looking for a COOP</strong>.
-            </p>
-            <a href="about-me.html">
-                ­<button class="cta" type="button">LEARN MORE</button>
+        <section id="about-me">
+            <h1 id="title">ABOUT ME</h1>
+            <h6 id="subtitle">Get to know my Computer Sciency side</h6>
+            <div id="about-me-text">
+                <p>
+                    I discovered my passion for Computer Science few years before entering University. 
+                    I’ve always loved the ability it gave to shape my ideas into a final product or to solve a problem regardless of its nature (business or personnal).
+                    <br /><br />
+                    During the last two years, I’ve been learning a lot about Computer Science (CS) through university courses and other ressources.
+                    Also, I’ve worked hard on various tasks (projects and assignements) to strengthen my knowledge of CS as well as to enhance my technical (Mobile development, java, etc...) and non-technical skills (Leadership, communication, etc...). 
+                    I’m very excited to bring value to your company or organization and to live through a marvellous COOP experience to also perfect all of my knowledge and my skills as well as discover more of them.
+                    <br /><br />
+                    Feel free to <span>view my work</span> with the button below 😃 and to contact me if needed.
+                </p>
+            </div>
+            <a href="projects.html">    
+                ­<button class="cta" id="view-work-cta" type="button">VIEW MY WORK</button>
             </a>
         </section>
         <footer id="footer">
@@ -58,5 +68,6 @@
         </footer>
     </body>
 
-    <script src="../JAVASCRIPT/menu.js" type="text/javascript"></script> 
+    <script src="../JAVASCRIPT/menu.js" type="text/javascript"></script>
+    <script src="../JAVASCRIPT/about-me.js" type="text/javascript"></script>
 </html>

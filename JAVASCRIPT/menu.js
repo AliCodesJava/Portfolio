@@ -7,16 +7,15 @@ function toggleMenu(){
     if(VIEWPORT_WIDTH <= 992){
         MENU_ICON.addEventListener("click", function(){
             MENU.style.display = 'block';
-            console.log("open");
         });
-    
         MENU.addEventListener("click", function(e){
             MENU.style.display = 'none';
-            console.log("close");
+            
             e.stopPropagation();
         });
+
+        return;
     }
-    else{ /* I shouldn't need this */
-        MENU.style.display = 'block';
-    }
+
+    MENU.style.display = 'block'; /* I shouldn't need this ?! */
 }

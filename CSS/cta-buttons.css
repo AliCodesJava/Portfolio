@@ -1,0 +1,14 @@
+.cta{
+    background-color: var(--buttons);
+    border: 2px solid var(--buttons);
+    font-weight: bold;
+    font-size: 1.15rem;
+    padding: 0.45rem 1.35rem;
+    border-radius: 0.425rem;
+    cursor: pointer;
+    transition: 0.35s background-color;
+}
+.cta:hover{
+    background-color: transparent;
+    border: 2px solid var(--buttons);
+}

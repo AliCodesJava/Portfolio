@@ -1,0 +1,53 @@
+#about-me{
+    width: 100%;
+    padding: 0 var(--text_header_indent);
+    overflow-y: auto;
+}
+
+#title, #subtitle{
+    text-align: center;
+}
+#subtitle{
+    font-weight: 300;
+}
+
+#about-me-text{
+    font-size: 0.9rem;
+    text-align: left;
+    margin-top: 1.5rem;
+}
+#about-me-text > span{
+    color: var(--links_SkillsNames);
+}
+
+#view-work-cta{
+    margin-top: 1.5rem;
+}
+
+/* media queries section */
+    /* tablets */
+    @media only screen and (min-width: 768px){
+        #about-me{
+            margin-top: 2rem;
+            overflow-y: none;
+        }
+    }
+    /* laptops & desktops */
+    @media only screen and (min-width: 992px){
+        #title{
+            font-size: 2.35rem;
+        }
+        #subtitle{
+            font-size: 0.85rem;
+            letter-spacing: 0.05rem;
+        }
+
+        #about-me-text{
+            font-size: 1.15rem;
+            text-align: left;
+        }
+
+        #view-work-cta{
+            margin-top: 2.5rem;
+        }
+    }
