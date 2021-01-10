@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+:root{
+    --links_SkillsNames: #FFA500;
+    --buttons: #4E6F2A;
+
+    --text_header_indent: 1.5rem;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+/* background - image and transparent layer */
+#background{
+    width: 100%;
+    height: 100%;
+    background: url("../assets/backgroundImage.jpg") 22.5%/cover no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1000;
+    filter: blur(0.25rem);
+}
+#background::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.775);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+/* header */
+#header-contacts-menu{
+    width: 100%;
+    height: 4.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* this causes the need for overflow hidden ? */
+    overflow: hidden;
+}
+
+
+#logo-link{
+    margin-left: var(--text_header_indent);
+}
+
+#logo{
+    width: 2rem;
+    display: block;
+    margin: 0 auto;
+    content: url("../assets/APLogo.svg");
+}
+
+
+#socials > a{
+    display: inline;
+    margin: 0 0.6rem;
+    font-size: 1.4rem;
+}
+#socials > a:last-child{
+    font-size: 1.45rem;
+}
+#socials > a > i{
+    transition: 0.35s color;
+}
+
+
+/* code for pseudo-elements fontawesome icons */
+.pseudo-elements-icons::before{
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-size: 1.25rem;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+}
+#pages-nav::before{ /* menu bars icon */
+    font-weight: 900;
+    content: "\f0c9";
+    margin-right: var(--text_header_indent);
+}
+#pages-nav > ul::before{ /* closing cross icon */
+    font-weight: 900;
+    content: "\f00d";
+    margin-top: 0.5rem;
+}
+#active-link{
+    color: var(--links_SkillsNames);
+}
+
+/* menu */
+#pages-nav > ul{
+    list-style: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    display: none;
+    text-align: center;
+}
+
+#pages-nav > ul > li{
+    font-size: 0.9rem;
+}
+#pages-nav > ul > li > a{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+/* footer */
+#footer{
+    background-color: #808080;
+    position: absolute;
+    bottom: 0;
+    font-size: 0.75rem;
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    /* to be able to center the footer's text vertically */
+    display: table;
+}
+
+#footer > p{
+    /* centers the text vertically within the footer */
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* media queries */
+    /* medium devices (landscape tablets) */
+    @media only screen and (min-width: 768px){
+        :root{
+            --text_header_indent: 3.75rem;
+        }
+
+        /* header */
+        #logo{
+            width: 2.3rem;
+        }
+    }
+    /* laptops & desktops */
+    @media only screen and (min-width: 992px){
+        /* header */
+        #header-contacts-menu{
+            height: 5rem;
+        }
+
+        #logo{
+            width: 4rem;
+            content: url("../assets/APSubtitledLogo.svg");
+        }
+
+        #socials > a > i:hover{
+            color: var(--links_SkillsNames);
+        }
+
+        /* code for pseudo-elements fontawesome icons */
+        .pseudo-elements-icons::before{
+            display: none;
+        }
+
+        /* menu */
+        #pages-nav{
+            margin-right: var(--text_header_indent);
+        }
+
+        #pages-nav > ul{
+            position: static;
+            background: transparent;
+            z-index: 0;
+            display: block;
+        }
+        #pages-nav > ul > li{
+            font-size: 0.75rem;
+            display: inline;
+        }
+        #pages-nav > ul > li > a{
+            text-decoration: none;
+            display: inline;
+            margin: 0 0.8rem;
+            padding: 0;
+            transition: 0.125s border-bottom, 0.35s color;
+        }
+        .other-link:hover{
+            border-bottom: 3px solid var(--links_SkillsNames);
+            color: var(--links_SkillsNames);
+        }
+    }
+    /* extra large devices */
+    @media only screen and (min-width: 1200px){
+        /* header */
+        #socials > a{
+            font-size: 1.75rem;
+        }
+        #socials > a:last-child{
+            font-size: 1.8rem;
+        }
+
+        /* menu */
+        #pages-nav > ul > li{
+            font-size: 1rem;
+        }
+    }

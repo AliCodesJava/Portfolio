@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ali's Portfolio - Home</title>
+
+        <meta charset="utf-8"­>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" type="image/svg" href="../assets/APTitleIcon.svg">
+
+        <link rel="stylesheet" type="text/css" href="../CSS/common.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/index.css">
+
+        <!-- using font-awesome stylesheet -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+        crossorigin="anonymous" />
+    </head>
+    <body>
+        <!-- wrapper made because we cannot use pseudo-elements on body 
+        and we don't want to apply blur on all body's elements -->
+        <div id="background"></div>
+        
+        <header id="header-contacts-menu">
+            <!-- src specified with css content property -->
+            <a href="index.html" id="logo-link">
+                <img id="logo" alt="Ali's Portfolio's logo"­ />
+            </a>
+            <address id="socials">
+                <a href="#"><i class="fab fa-github"></i></a><!--
+                --><a href="#"><i class="fab fa-linkedin"></i></a><!--
+                --><a href="#"><i class="fas fa-envelope"></i></a>
+            </address>
+            <nav onclick="toggleMenu()" class="pseudo-elements-icons" id="pages-nav">
+                ­<!-- bars menu pseudo-element icon here -->
+                <ul onclick="toggleMenu()" class="pseudo-elements-icons" id="menu">
+                    ­<!-- closing cross pseudo-element icon here -->
+                    <li><a id="active-link" href="index.html">Home</a></li>
+                    <li><a class="other-link" href="about-me.html">About Me</a></li>
+                    <li><a class="other-link" href="technical-skills.html">Technical Skills</a></li>
+                    <li><a class="other-link" href="projects.html">Projects</a></li>
+                    <li><a class="other-link" href="coding-challenges.html">Coding Challenges</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="welcome">
+            <h1 id="welcome-sentence">Hello, <strong>It’s Ali</strong> ! Welcome to my Portfolio !</h1><br />
+            <p id="welcome-text">I’m a second year Computer Science student in Canada 🇨🇦.<br /> <!-- 🇨🇦 : Canadian Flag emoji -->
+                Currently, <strong id="work-status">I’m looking for a COOP</strong>.
+            </p>
+            <a href="about-me.html">
+                ­<button id="learn-more-cta" type="button">LEARN MORE</button>
+            </a>
+        </section>
+        <footer id="footer"><p>Portfolio designed and developed by Ali (myself)</p></footer>
+    </body>
+
+    <script src="../JAVASCRIPT/index.js" type="text/javascript"></script> 
+</html>
