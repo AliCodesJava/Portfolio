@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Technical Skills - Ali's Portfolio</title>
+
+        <meta charset="utf-8"­>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" type="image/svg" href="../assets/APTitleIcon.svg">
+
+        <link rel="stylesheet" type="text/css" href="../CSS/common.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/technical-skills.css">
+
+        <!-- using font-awesome stylesheet -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+        crossorigin="anonymous" />
+    </head>
+    <body>
+        <!-- wrapper made because we cannot use pseudo-elements on body 
+        and we don't want to apply blur on all body's elements -->
+        <div id="background"></div>
+        
+        <header id="header-contacts-menu">
+            <!-- src specified with css content property -->
+            <a href="index.html" id="logo-link">
+                <img id="logo" alt="Ali's Portfolio's logo"­ />
+            </a>
+            <address id="socials">
+                <a href="#"><i class="fab fa-github"></i></a><!--
+                --><a href="#"><i class="fab fa-linkedin"></i></a><!--
+                --><a href="#"><i class="fas fa-envelope"></i></a>
+            </address>
+            <nav onclick="toggleMenu()" class="pseudo-elements-icons" id="pages-nav">
+                ­<!-- bars menu pseudo-element icon here -->
+                <ul onclick="toggleMenu()" class="pseudo-elements-icons" id="menu">
+                    ­<!-- closing cross pseudo-element icon here -->
+                    <li><a class="other-link" href="index.html">Home</a></li>
+                    <li><a class="other-link" href="about-me.html">About Me</a></li>
+                    <li><a id="active-link" class="other-link" href="technical-skills.html">Technical Skills</a></li>
+                    <li><a class="other-link" href="projects.html">Projects</a></li>
+                    <li><a class="other-link" href="coding-challenges.html">Coding Challenges</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="technical-skills">
+            <h1 id="title">TECHNICAL SKILLS</h1>
+            <h6 id="subtitle">Some of my skills you should know about !</h6>
+            <p id="description">Here are some of the skills that I acquired through projects and school assignments that I’ve done.</p>
+            <div id="skills-wrapper">
+                <div class="skills-card">
+                    <h3 class="pseudo-elements-skills-icons skills-title db">Databases</h3>
+                    <ul>
+                        <li>- Implemented a Non-SQL & JSON formatted Database for a mobile app. (View the projects section for more about the app.)</li>
+                    </ul>
+                </div>
+                <div class="skills-card">
+                    <h3 class="skills-title">
+                        <i class="fab fa-html5 frontend"></i>
+                        Frontend
+                        <i class="fab fa-css3-alt frontend"></i>
+                    </h3>
+                    <ul>
+                        <li>- Used HTML5 and CSS3 to build several websites including this portfolio !</li>
+                    </ul>
+                </div>
+                <div class="skills-card">
+                    <h3 class="pseudo-elements-skills-icons skills-title java">Java</h3>
+                    <ul>
+                        <li>- Used for most programming tasks done including Novigrad Services mobile app. (View the projects section for more about the app.)</li>
+                        <li>- Has more than a year of experience with Java</li>
+                    </ul>
+                </div>
+                <div class="skills-card">
+                    <h3 class="pseudo-elements-skills-iconss skills-title">
+                        <i class="fas fa-mobile-alt"></i>
+                        Mobile Dev.
+                    </h3>
+                    <ul>
+                        <li>- Developed Novigrad Services mobile app. in a team on Android Studio (View the projects section for more about the app.)</li>
+                    </ul>
+                </div>
+                <div class="skills-card">
+                    <h3 class="skills-title">
+                        <i class="fab fa-github git"></i>
+                        Git & GitHub
+                    </h3>
+                    <ul>
+                        <li>- Used it to complete many tasks including the development of Novigrad Services (View the projects section for more about the app.)</li>
+                        <li>- Used Git&GitHub to collaborate on teams projects</li>
+                    </ul>
+                </div>
+                <div class="skills-card">
+                    <h3 class="pseudo-elements-skills-icons skills-title oop">OOP</h3>
+                    <ul>
+                        <li>- Used the OOP programming paradigm for the past year and a half. (For an application of the paradigm, view Novigrad Services in the projects section).</li>
+                        <li>- Has a strong understanding of Object-Oriented Programming concepts</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <p>Portfolio designed and developed by Ali (myself)</p>
+        </footer>
+    </body>
+
+    <script src="../JAVASCRIPT/menu.js" type="text/javascript"></script>
+    <script src="../JAVASCRIPT/technical-skills.js" type="text/javascript"></script>
+</html>

@@ -16,7 +16,7 @@
     text-align: left;
     margin-top: 1.5rem;
 }
-#about-me-text > span{
+#about-me-text span{
     color: var(--links_SkillsNames);
 }
 
