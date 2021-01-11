@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projects - Ali's Portfolio</title>
+
+        <meta charset="utf-8"­>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" type="image/svg" href="../assets/APTitleIcon.svg">
+
+        <link rel="stylesheet" type="text/css" href="../CSS/common.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/cta-buttons.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/projects.css">
+
+        <!-- using font-awesome stylesheet -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+        crossorigin="anonymous" />
+    </head>
+    <body>
+        <!-- wrapper made because we cannot use pseudo-elements on body 
+        and we don't want to apply blur on all body's elements -->
+        <div id="background"></div>
+        
+        <header id="header-contacts-menu">
+            <!-- src specified with css content property -->
+            <a href="index.html" id="logo-link">
+                <img id="logo" alt="Ali's Portfolio's logo"­ />
+            </a>
+            <address id="socials">
+                <a href="https://github.com/AliCodesJava"><i class="fab fa-github"></i></a><!--
+                --><a href="https://www.linkedin.com/in/ali-abdeddaim-21180a166/"><i class="fab fa-linkedin"></i></a><!--
+                --><a href="mailto:ali.ottawa.canada@gmail.com"><i class="fas fa-envelope"></i></a>
+            </address>
+            <nav onclick="toggleMenu()" class="pseudo-elements-icons" id="pages-nav">
+                ­<!-- bars menu pseudo-element icon here -->
+                <ul onclick="toggleMenu()" class="pseudo-elements-icons" id="menu">
+                    ­<!-- closing cross pseudo-element icon here -->
+                    <li><a id="active-link" href="index.html">Home</a></li>
+                    <li><a class="other-link" href="about-me.html">About Me</a></li>
+                    <li><a class="other-link" href="technical-skills.html">Technical Skills</a></li>
+                    <li><a class="other-link" href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="projects">
+            <section>
+                <h1 id="title">PROJECTS</h1>
+                <h6 id="subtitle">Showcasing some projects that I loved working on 😃</h6>
+                <p id="card-description">Click on a card for more details about the particular project !</p>
+            </section>
+            <div id="projects-wrapper">
+                <div onclick="toggleProjectInfo()" id="first-project-card" class="projects-card first-project">
+                    <img class="projects-logo" src="../assets/NovigradServices.svg" alt="Novigrad Services logo" />
+                    <h3 class="projects-title">Novigrad Services</h3>
+                    <p class="project-subtitle">A provincial services mobile app</p>
+                    <div id="first-project-more-info">
+                        <i onclick="toggleProjectInfo()" class="fas fa-times" id="closing-icon"></i>
+                        <div class="project-brand projects-card first-project">
+                            <img class="projects-logo" src="../assets/NovigradServices.svg" alt="Novigrad Services logo" />
+                            <h3 class="projects-title">Novigrad Services</h3>
+                            <p class="project-subtitle">A provincial services mobile app</p>
+                        </div>
+                        <div class="project-info" id="first-project-info">
+                            <h4>Description</h4>
+                            <p>Novigrad Services implements basic features offered by a province named “Novigrad”. It is just like Ontario Services or Quebec Services. The app facilitates the process of getting a driver’s license, identity card or health card for the citizens of Novigrad. To design this app., we have used UML diagrams. To develop it we have used Android Studio and programmed it in Java in an OOP (Object-Oriented Programming) fashion.</p>  
+                            <p><br /><strong>Project Name</strong> : Novigrad Services<br /><br /><strong>Categorie(s)</strong> : Mobile Development<br /><br /><strong>Technologie(s) used</strong> : Java, Android Studio IDE</p><br />
+                            <a href="https://docs.google.com/document/d/16B-hoX3FP6A94Xr9RsotzrABk0cDfHUE0P9luiQg8vc/edit?usp=sharing">
+                                ­<button class="cta" type="button">
+                                    <i class="far fa-play-circle"></i>
+                                    View Report (FR)
+                                </button>
+                            </a><!-- -->
+                            <a href="https://github.com/AliCodesJava/NovigradServices">
+                                ­<button class="cta" type="button">
+                                    <i class="fas fa-code"></i>
+                                    View Github Repo
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-card second-project">
+                    <h3 class="projects-title">Coming Soon</h3>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <p>Portfolio designed and developed by Ali (myself)</p>
+        </footer>
+    </body>
+
+    <script src="../JAVASCRIPT/menu.js" type="text/javascript"></script>
+    <script src="../JAVASCRIPT/projects.js" type="text/javascript"></script>
+</html>
