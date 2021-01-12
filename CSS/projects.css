@@ -97,6 +97,9 @@
     margin-top: 0.5rem;
     font-size: 0.85rem;
 }
+.extra-info{
+    text-align: center !important;
+}
 .cta{
     font-size: 0.8rem;
     margin: 0.25rem;
